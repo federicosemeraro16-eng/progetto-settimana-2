@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Homepage — Week Project</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Logo, barra di ricerca, link Account / Ordini / Carrello -->
+      <a href="javascript:void(0)" id="header-link">amazon</span>
+        <div class="search-container">
+      <input
+        type="text"
+        placeholder="Cerca prodotti,categorie,brand..."
+        id="searchbar"
+      />
+      <button type="button">Cerca</button>
+      </div>
+      <a href="javascript:void(0)">Account</a>
+      <a href="javascript:void(0)">Ordini</a>
+      <a href="javascript:void(0)" id="cart">Carrello(0)</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <!-- Titolo grande, sottotitolo -->
+        <h1>Le offerte di oggi</h1>
+        <p>Sconti fino al 70% su elettronica,libri,casa e molto altro</p>
+      </section>
+
+      <section class="categorie">
+        <!-- 4 card categoria -->
+        <h2>Categorie</h2>
+        <div class="card-container">
+          <section class="card">
+            <div class="image-placeholder elettronica">
+              <p>Elettronica</p>
+            </div>
+            
+            <h3>Elettronica</h3>
+            <a href="javascript:void(0)">Scopri di più</a>
+            
+          </section>
+          <section class="card">
+            <div class="image-placeholder libri">
+              <p>Libri</p>
+            </div>
+            
+            <h3>Libri</h3>
+            <a href="javascript:void(0)">Scopri di più</a>
+            
+          </section>
+          <section class="card">
+            <div class="image-placeholder abbigliamento">
+              <p>Abbigliamento</p>
+            </div>
+            
+            <h3>Abbigliamento</h3>
+            <a href="javascript:void(0)">Scopri di più</a>
+            
+          </section>
+          <section class="card">
+            <div class="image-placeholder casa">
+              <p>Casa</p>
+            </div>
+            
+            <h3>Casa</h3>
+            <a href="javascript:void(0)">Scopri di più</a>
+            
+          </section>
+        </div>
+      </section>
+
+      <section id="renderProducts">
+        <!-- Griglia prodotti (Versione Base: HTML statico; Intermedia/Avanzata: generata da JS) -->
+
+        <h2>I più venduti</h2>
+        <div class="product-container">
+          
+          <section class="product-card">
+            <div class="product-image">
+              <h4>Cuffie</h4>
+              
+            </div>
+
+            <div class="product-info">
+              <h3>Cuffie wireless con cancellazione del rumore</h3>
+              <p>€ 89,99</p>
+              <button class="add-cart" type="button">Aggiungi al carrello</button>
+              <div class="stars five"></div>
+            </div>
+          </section>
+          <section class="product-card">
+            <div class="product-image">
+              <h4>Tablet</h4>
+              
+            </div>
+
+            <div class="product-info">
+              <h3>Tablet 10 pollici 64 GB</h3>
+              <p>€ 199,00</p>
+              <button class="add-cart" type="button">Aggiungi al carrello</button>
+              <div class="stars five"></div>
+            </div>
+          </section>
+          <section class="product-card">
+            <div class="product-image">
+              <h4>Libro</h4>
+              
+            </div>
+
+            <div class="product-info">
+              <h3>Il romanzo dell'anno</h3>
+              <p>€ 14,90</p>
+              <button class="add-cart"type="button">Aggiungi al carrello</button>
+              <div class="stars four"></div>
+            </div>
+          </section>
+          <section class="product-card">
+            <div class="product-image">
+              <h4>Zaino</h4>
+            </div>
+
+            <div class="product-info">
+              <h3>Zaino da viaggio 30L impermeabile</h3>
+              <p>€ 22,00</p>
+              <button class="add-cart" type="button">Aggiungi al carrello</button>
+              <div class="stars four"></div>
+            </div>
+          </section>
+          <section class="product-card">
+            <div class="product-image">
+              <h4>Lampada</h4>
+              
+            </div>
+
+            <div class="product-info">
+              <h3>Lampada LED da scrivania orientabile</h3>
+              <p>€ 29,50</p>
+              <button class="add-cart" type="button">Aggiungi al carrello</button>
+              <div class="stars three"></div>
+            </div>
+          </section>
+          <section class="product-card">
+            <div class="product-image">
+              <h4>Smartwatch</h4>
+              
+            </div>
+
+            <div class="product-info">
+              <h3>Smartwatch fitness con GPS</h3>
+              <p>€ 119,00</p>
+              <button class="add-cart"type="button">Aggiungi al carrello</button>
+              <div class="stars four"></div>
+            </div>
+          </section>
+          <section class="product-card">
+            <div class="product-image">
+              <h4>Mouse</h4>
+            </div>
+
+            <div class="product-info">
+              <h3>Mouse ergonomico wireless</h3>
+              <p>€ 24,90</p>
+              <button class="add-cart" type="button">Aggiungi al carrello</button>
+              <div class="stars five"></div>
+            </div>
+          </section>
+          
+          <section class="product-card">
+            <div class="product-image">
+              <h4>Mouse</h4>
+            </div>
+
+            <div class="product-info">
+              <h3>Caffettiera moka 6 tazze</h3>
+              <p>€ 22,00</p>
+              <button class="add-cart" type="button">Aggiungi al carrello</button>
+              <div class="stars five"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- 3 colonne di link -->
+      <section class="link-col">
+        <h2>Chi siamo</h2>
+        <a href="javascript:void(0)">Lavora con noi</a>
+        <a href="javascript:void(0)">Investitori</a>
+        <a href="javascript:void(0)">Sostenibilità</a>
+      </section>
+      <section class="link-col">
+        <h2>Aiuto</h2>
+        <a href="javascript:void(0)">Centro assistenza</a>
+        <a href="javascript:void(0)">Spedizioni</a>
+        <a href="javascript:void(0)">Resi e rimborsi</a>
+      </section>
+      <section class="link-col">
+        <h2>Connettiti</h2>
+        <a href="javascript:void(0)">Facebook</a>
+        <a href="javascript:void(0)">Instagram</a>
+        <a href="javascript:void(0)">YouTube</a>
+      </section>
+    </footer>
+
+    
+  </body>
+</html>

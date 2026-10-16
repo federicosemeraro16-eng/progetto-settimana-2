@@ -221,6 +221,33 @@ console.log(`--------------------------------------------------------------
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+function renderProducts(lista){
+  let html ='';
+for (let i=0; i<lista.length;i++){
+  html +=`
+
+  <section class="product-card">
+            <div class="product-image">
+              <h4>${lista[i].name}</h4>
+              
+            </div>
+
+            <div class="product-info">
+              <h3>${lista[i].name}</h3>
+              <p>€ ${lista[i].price}</p>
+              <button class="add-cart" type="button">Aggiungi al carrello</button>
+              <div class="stars ${lista[i].rating}"></div>
+            </div>
+          </section>
+  `
+}
+return html
+}
+
+const container = document.querySelector('#renderProducts')
+container.innerHTML = renderProducts(products)
+
 /* VERSIONE AVANZATA — Aggiungi al carrello
    Quando si clicca il bottone "Aggiungi al carrello", incrementa il contatore
    nell'header (Carrello (0) → Carrello (1) → ...).
