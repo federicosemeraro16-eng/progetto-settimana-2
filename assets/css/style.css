@@ -106,6 +106,10 @@ header a:last-of-type{
   
 }
 
+.prodotti{
+  padding: 0 20px;
+}
+
 .product-container{
   background-color: #EEEEEE;
 }
@@ -122,8 +126,12 @@ header a:last-of-type{
   display: inline-block;
   border-radius: 3px;
   margin-right: 8px; 
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
+.card-desc{
+  padding-left: 20px;
+}
 .card{
   width: 275px;
   text-align: left;
