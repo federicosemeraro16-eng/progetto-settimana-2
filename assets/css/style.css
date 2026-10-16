@@ -169,16 +169,23 @@ header a:last-of-type{
 }
 .card h3,
 .product-card h3{
-  font-size: 1rem;
-  margin: 10px 0;
+  font-size: 0.9rem;
   text-align: left;
 }
+
+.card h3,
+.card a{
+  padding: 10px;
+  
+}
+
 
 .card a{
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 600;
   color: #0066c0;
+  font-size: 0.7rem;
 }
 
 .product-image{
