@@ -37,15 +37,63 @@ h1,h2,h3,h4{
 
 header{
   background-color: #131921;
-  padding: 18px 20px;
+  padding:8px;
   color: #fff;
   font-size: 0.8rem;
   
+  
+  
 }
 
-main{
-  padding: 18px 20px;
+header a:first-child{
+  color: #C45500;
+  font-size: 1.5rem;
+  font-weight: 800;
+
 }
+
+.search-container{
+  font-size: 0;
+  display: inline-block;
+}
+
+header input{
+  width: 420px;
+  
+}
+header input,
+header button{
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+header button{
+  background-color: #FEBD69;
+  font-weight: 600;
+}
+
+header a:not(first-of-type){
+  padding: 10px;
+}
+
+header a:last-of-type{
+  background-color: #232F3E;  
+  border-radius: 3px;
+}
+
+
+.hero{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #303F51;
+  height: 200px;
+}
+
+.hero h1{
+  padding-top: 40px;
+}
+
+
 
 .categorie{
   border: 1px solid black;
@@ -56,7 +104,6 @@ main{
 .product-container{
   text-align: center;
   
-
 }
 
 .product-container{
@@ -65,21 +112,80 @@ main{
 
 .card,
 .product-card{
-  width: 20%;
+  width: 23%;
   margin-top: 20px;
   display: inline-block;
-  border: 1px solid red;
-  padding: 40px;
+  /* border: 1px solid red; */
+  margin-right: 8px; 
+}
 
+.card{
+  width: 275px;
+  text-align: left;
+}
+
+.elettronica{
+  background-color: #232F3E;
+}
+
+.libri{
+  background-color: #C45500;
+}
+
+.abbigliamento{
+  background-color: #146EB4;
+}
+
+.casa{
+  background-color: #067D62;
+}
+
+.image-placeholder{
+   height: 120px;
+   width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
   
 }
+
+.image-placeholder p{
+  line-height: 120px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+.card h3,
+.product-card h3{
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.card a{
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0066c0;
+}
+
+.product-image{
+  color: #EEEEEE;
+  height: 250px;
+  color: #303F51;
+  border: 1px solid #303F51;
+
+}
+
+
+
+
 
 footer{
   padding: 30px 20px;
   color: #fff;
   background-color: #232F3E;
   font-size: 0.7rem;
-  text-align: ;
+  
   
 }
 footer .link-col{
@@ -87,4 +193,10 @@ footer .link-col{
   width: 30%;
   display: inline-block;
   /* padding: 18px 20px; */
+}
+
+.stars::before {
+  content: "★★★★★";
+  color: #FF9900;
+  font-size: 1rem;
 }
