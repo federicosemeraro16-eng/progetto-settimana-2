@@ -73,7 +73,7 @@ header button{
 
 header a:not(first-of-type){
   padding: 10px;
-}
+} 
 
 header a:last-of-type{
   background-color: #232F3E;  
@@ -133,7 +133,7 @@ header a:last-of-type{
   padding-left: 20px;
 }
 .card{
-  width: 275px;
+  
   text-align: left;
 }
 
