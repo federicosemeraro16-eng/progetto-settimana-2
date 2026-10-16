@@ -230,6 +230,26 @@ console.log(`--------------------------------------------------------------
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function createCarteCounter(){
+   let count =0
+   return function(){
+      count ++
+      return count
+   }
+}
+
+const incrementCart = createCarteCounter()
+
+const addCartBtn = document.querySelectorAll('.add-cart')
+const cart = document.querySelector('#cart')
+
+for (let i =0;i<addCartBtn.length;i++){
+   addCartBtn[i].addEventListener('click',function(){
+   const newValue = incrementCart()
+   cart.textContent=`Carrello (${newValue})`}) 
+}
+
+
 /* VERSIONE AVANZATA — Ordinamento
    Menu a tendina con: Prezzo crescente, Prezzo decrescente, Rating.
    Suggerimento: per rendere più leggibile la select puoi usare optgroup
