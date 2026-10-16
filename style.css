@@ -40,8 +40,8 @@ header{
   padding:8px;
   color: #fff;
   font-size: 0.8rem;
-  
-  
+  position: sticky;
+  top: 0;
   
 }
 
@@ -96,8 +96,8 @@ header a:last-of-type{
 
 
 .categorie{
-  border: 1px solid black;
   width: 100%; 
+  padding: 20px;
 }
 
 .card-container,
@@ -120,7 +120,7 @@ header a:last-of-type{
   width: 23%;
   margin-top: 20px;
   display: inline-block;
-  
+  border-radius: 3px;
   margin-right: 8px; 
 }
 
@@ -177,17 +177,13 @@ header a:last-of-type{
   color: #EEEEEE;
   height: 250px;
   color: #303F51;
-  border: 1px solid #303F51;
+  border: 1px solid #EEEEEE;
   padding-bottom:  20px;
 
 }
-
-.product-image p {
-  text-align: center;
-  line-height: 250px;
+.product-info p{
+  color:red;
   font-weight: 800;
-  font-size: 1.2rem;
-  color: #303F51;
 }
 
 .add-cart{
@@ -226,8 +222,31 @@ footer .link-col a{
   display: block;
 }
 
-.stars::before {
-  content: "★★★★★";
+.stars::before{
   color: #FF9900;
   font-size: 1rem;
+}
+
+.stars.five::before {
+  content: "★★★★★(4.7)";
+}
+.stars.four::before {
+  content: "★★★★☆(4.7)";
+}
+
+.stars.three::before {
+  content: "★★★☆☆(4.0)";
+}
+
+
+a:hover{ 
+  text-decoration: underline;
+}
+
+.categorie a:hover{
+  color: #0066c0;
+}
+
+#header-link:hover{
+  text-decoration: none;
 }
