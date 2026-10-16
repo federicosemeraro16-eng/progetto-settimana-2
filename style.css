@@ -12,6 +12,7 @@ body {
   background: #fff;
 }
 
+
 img {
   max-width: 100%;
   display: block;
@@ -30,3 +31,60 @@ button {
 }
 
 /* Scrivi qui sotto i tuoi stili */
+h1,h2,h3,h4{
+  font-weight: 800;
+}
+
+header{
+  background-color: #131921;
+  padding: 18px 20px;
+  color: #fff;
+  font-size: 0.8rem;
+  
+}
+
+main{
+  padding: 18px 20px;
+}
+
+.categorie{
+  border: 1px solid black;
+  width: 100%; 
+}
+
+.card-container,
+.product-container{
+  text-align: center;
+  
+
+}
+
+.product-container{
+  border: 2px solid green;
+}
+
+.card,
+.product-card{
+  width: 20%;
+  margin-top: 20px;
+  display: inline-block;
+  border: 1px solid red;
+  padding: 40px;
+
+  
+}
+
+footer{
+  padding: 30px 20px;
+  color: #fff;
+  background-color: #232F3E;
+  font-size: 0.7rem;
+  text-align: ;
+  
+}
+footer .link-col{
+  border: 3px solid orange;
+  width: 30%;
+  display: inline-block;
+  /* padding: 18px 20px; */
+}
